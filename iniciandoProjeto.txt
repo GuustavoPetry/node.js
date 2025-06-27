@@ -1,0 +1,4 @@
+1. Criar diretório do projeto
+2. Rodar o comando: npm init
+3. Preencher os campos solicitados
+4. Após o npm irá criar o arquivo package.json
