@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2020",  //define a versão do JS                          
+    "module": "commonjs",  //módulo padrão do Node                  
+    "rootDir": "./src",  //define o diretório de códigos TS 
+    "outDir": "./dist",  //define o diretório de transpilação (código pronto para uso)     
+    "strict": true,  //deixa a validação de tipos de forma estrita
+    "esModuleInterop": true,  //permite importação padrão de módulos CommonJS                           
+    "forceConsistentCasingInFileNames": true,  //evita erros com maiúsculas ou minúsculas nos import's             
+  },
+  "include": ["src"],  //inclui arquivos na pasta src
+  "exclude": ["node_modules", "dist"]  //exclui essas pastas do processo de transpilação
+}

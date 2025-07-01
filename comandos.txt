@@ -9,4 +9,6 @@ npm i <nome_do_pacote> flag
 --save -> salva o pacote para rodar em tempo de execução
 --save-dev ou -D instala o pacote apenas no ambiente de desenvolvimento
 
-
+* Instalação GLOBAL:
+    - usar sempre que um pacote precisa ficar disponível em qualquer projeto
+    - COMANDO => npm i -g <nome_do_pacote>

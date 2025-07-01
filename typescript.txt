@@ -1,0 +1,66 @@
+TypeScript é um superset do JavaScript criado pela Microsoft.
+Ele adiciona tipagem estática e recursos avançados no desenvolvimento
+de aplicações grandes e complexas.
+
+Podemos chamar TypeScript de linguagem de programação uma vez que utiliza
+boa parte da sintaxe do JavaScript adicionando a tipagem. Porém, o motor
+V8 do JavaScript não reconhece nativamente o TypeScript. Para isso, precisamos
+fazer o processo de transpilação.
+
+Mas o que é transpilação?
+ - é o processo onde o código de arquivos .ts é reescrito para .js para assim
+   poder ser executado pelo motor V8
+
+Vantagens de usar TS:
+    1. tipagem estática - ajuda a capturar erros durante o desenvolvimento, reduz
+    bugs causados por tipagem incorreta ou inesperada.
+    
+    2. melhor autocompletar - IDE's como o VSCode oferecem sugestões mais precisas 
+    com base nos tipos definidos.
+
+    3. mais facilidade para refatoração - alterações em nomes de variáveis, funções
+    ou classes são mais seguras e consistentes.
+
+    4. melhor escalabilidade - ideal para projetos grandes ou com muitas pessoas na equipe.
+
+    5. melhor documentação - os tipos servem como documentação automática.
+
+    6. comunidade e ecossistema em crescimento - muitos frameworks modernos (React, Angular)
+    oferecem suporte nativo ou excelente integração ao TS.
+
+Desvantagens de usar TS:
+    1. curva de aprendizado - para quem vem de JS pode parecer mais complicado
+
+    2. mais código para escrever - o código é mais verboso usando TS.
+    
+    3. tempo de compilação - o código necessita ser compilado para rodar.
+
+    4. configuração inicial - requer instalação e configuração de pacotes para uso de TS.
+
+    5. integração com bibliotecas JS - algumas bibliotecas não possuem tipos disponíveis ou
+    tem tipos incompletos.
+
+    6. falso sentimento de segurança - a tipagem de TS é apenas em ambiente de desenvolvimento,
+    no ambiente de produção os tipos desaparecem e erros ainda podem ocorrer caso não se tenha o
+    devido cuidado na validação dos dados.
+
+* Instalação de TypeScript:
+    - npm i -g typescript
+    - se necessário adicionar no Path o caminho => C:/~/AppData/Roaming/npm 
+
+* Configuração TypeScript:
+    - npx tsc --init => cria um arquivo de configuração chamado tsconfig.json
+    - criar o arquivo na raiz do projeto
+
+* Ao configurar o package.json para automatizar transpilção:
+    - analisar o processo no package.json => "scripts"
+
+* Arquitetura sugerida de pastas:
+projeto
+/src 
+    /index.ts
+/dist
+    /index.js
+/package.json
+/tsconfig.json
+
